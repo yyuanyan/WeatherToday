@@ -1,0 +1,39 @@
+/**index.wxss**/
+.container{
+  /* vh为手机高度，vw为手机宽度 */
+  height: 100vh;
+  display: flex;
+  /* 垂直布局 */
+  flex-direction: column;
+  /* 项目布局采用居中布局 */
+  align-items: center;
+  /* 主轴方向上对齐方式：space-around */
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+}
+.detail{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bar{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+}
+.box, .box_top{
+  width: 33.3%;
+  text-align: center;
+}
+.box_top{
+  color: #33539e;
+  font-size: 45rpx;
+  
+}
+text{
+  font-size: 80rpx;
+  color: #6F89A2;
+}
+image{
+  /* width: 220rpx; */
+}

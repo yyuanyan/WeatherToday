@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 区域一：地区选择器 -->
+  <!-- bindchange=""指的是此处链接的函数 -->
+  <picker mode = 'region' bindchange="changeRegion">
+    <view>{{region}}</view>
+  </picker>
+  <!-- 区域二：文本区域 -->
+  <text>{{now.tmp}}℃ {{now.cond_txt}}</text>
+  <!-- 区域三：图片区域 -->
+  <image src="/images/{{now.cond_code}}.png"></image>
+  <!-- 区域四：多行天气信息 -->
+  <view class="detail">
+    <view class="bar">
+      <view class="box_top">湿度</view>
+      <view class="box_top">气压</view>
+      <view class="box_top">能见度</view>
+    </view>
+    <view class="bar">
+      <view class="box">{{now.hum}} %</view>
+      <view class="box">{{now.pres}} hPa</view>
+      <view class="box">{{now.vis}} Km</view>
+    </view>
+    <view class="bar">
+      <view class="box_top">风向</view>
+      <view class="box_top">风速</view>
+      <view class="box_top">风力</view>
+    </view>
+    <view class="bar">
+      <view class="box">{{now.wind_dir}}</view>
+      <view class="box">{{now.wind_spd}} Km/h</view>
+      <view class="box">{{now.wind_sc}} 级</view>
+    </view>
+  </view>
+</view>
